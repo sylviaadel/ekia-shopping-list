@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Lato-Regular";   /*Can be any text*/
+  src: url("./fonts/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato-Bold";   /*Can be any text*/
+  src: url("./fonts/Noto_Sans/NotoSans-Bold.ttf") format("truetype");
+}
+*{
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.App{
+  font-family: 'Lato-Regular';
+  min-height: calc(100vh);
+  background-color: rgba(0, 88, 171, 0.05);
+  padding-top: 65px;
+}
+.primaryBtn{
+  background-color: #0058ab;
+  border: 0;
+  border-radius: 100px;
+  width: auto;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  padding: 0 20px;
+  cursor: pointer;
+  line-height: 12px;
+  transition: all .4s;
+  span{
+      font-size: 18px;
+  }
+  &:hover{
+      background-color: #01427e;
+  }
+}
+.secondaryBtn{
+  background-color: #6d7174;
+  border: 0;
+  border-radius: 100px;
+  width: auto;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  padding: 0 20px;
+  cursor: pointer;
+  line-height: 12px;
+  transition: all .4s;
+  span{
+      font-size: 18px;
+  }
+  &:hover{
+      background-color: #4a4c4e;
+  }
+}
+.form-control:focus{
+    box-shadow: none!important;
+}
+h1{
+    color: #0058ab;
+    font-family: 'Lato-Bold';
+    margin: 20px 0!important;
+    font-size: 36px!important;
+}
+.form-check{
+  display: flex!important;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  &-input{
+    opacity: 1!important;
+    &:checked{
+      background-color: #0058ab!important;
+      border-color: #0058ab!important;
+    }
+    &:focus{
+      box-shadow: none!important;
+      border-color: #0058ab!important;
+    }
+  }
+  img{
+    height: 30px;
+  }
+}
+.bold{
+  font-family: 'Lato-Bold';
+}
