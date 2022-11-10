@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 // @ts-ignore
 import AddItemForm from '../AddItemForm/AddItemForm.tsx'
 import Form from 'react-bootstrap/Form';
-import ShoppingListComponent from '../ShoppingList/ShoppingList.tsx'
+import {Link} from 'react-router-dom'
 
 interface AddItemModalProps{
   onCloseModal(event: any): unknown;
@@ -41,8 +41,10 @@ const AddItemModal: FC<AddItemModalProps> = (props) => {
           </Form>
         </div>
         <div className={styles.modalFooter}>
-          <button className='secondaryBtn' onClick={e => onModalClose(e)}>close</button>
-          <button className='primaryBtn' type="submit" form="form">Save</button>
+          <button className='secondaryBtn' onClick={e => onModalClose(e)}>close</button>  
+          <Link to='list'>
+            <button className='primaryBtn' type="submit" form="form">Save</button>
+          </Link>
           </div>
         <div>
         </div>
