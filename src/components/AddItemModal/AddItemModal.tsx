@@ -24,7 +24,6 @@ const AddItemModal: FC<AddItemModalProps> = (props) => {
 
   function onSubmitHandler (event) {
     event.preventDefault();
-    //alert(item.name)
     props.onCloseModal(event);
   }
 

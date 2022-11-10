@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import styles from './ShoppingList.module.scss';
 import Form from 'react-bootstrap/Form';
 // @ts-ignore
@@ -9,8 +9,11 @@ import Item from '../Item/Item.tsx'
 interface ShoppingListProps {}
 
 const ShoppingList: FC<ShoppingListProps> = () => {
+
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
+  const [showList, setShowList] = useState(false);
+  
   function openFromParent(event) {
     event.preventDefault();
     setIsOpen(true);
@@ -45,7 +48,10 @@ const ShoppingList: FC<ShoppingListProps> = () => {
             <span>+</span> Add Item
           </button>
         </div>
-        <button className={styles.btnlink}>View completed items</button>
+        <button className={styles.btnlink} onClick={() => setShowList(!showList)}>
+          View completed items
+        </button>
+        {showList &&
         <Form className={styles.itemsForm}>
           <ul>
             <li>
@@ -53,6 +59,7 @@ const ShoppingList: FC<ShoppingListProps> = () => {
             </li>
           </ul>
         </Form>
+        }
       </div>
       <AddItemModal
         IsModalOpened={modalIsOpen}
