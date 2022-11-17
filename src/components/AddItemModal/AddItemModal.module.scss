@@ -18,12 +18,14 @@
     border-radius: 5px;
     transition: all .5s;
     animation: fade-in .7s;
+    font-size: 14px;
     h2{
-        font-size: 18px;
-        padding: 10px 20px;
+        font-size: 16px;
+        padding: 10px 15px;
         color: #0058ab;
         border-bottom: solid 1px #eee;
         margin: 0;
+        font-family: 'Lato-Bold';
     }
     .modalBody{
         padding: 20px;
@@ -36,9 +38,13 @@
         column-gap: 10px;
     }
 }
-.AddItemForm {
-    label{
-        font-family: 'Lato-Bold';
-        font-size: 14px;
+@media only screen and (max-width: 1200px) {
+    .AddItemModal {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .AddItemModal {
+        width: 95%;
     }
 }

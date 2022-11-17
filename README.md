@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Quick Start
+
+Run the following commands:
+
+```
+npm install
+npm start
+```
+
+This will install dependencies, then start the app and mock API.
+
+## Starter Project Overview
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+I made the following enhancements:
+
+1. Added some React components to help us get started: Header, WelcomePage
+2. Added scss to project
+3. Changed App.css to be App.scss
+4. Added new favIcon(logo.png) to the path `/public/images`.
+5. Add images to the path `/src/images/images`
+6. Add needed fonts to `/src/fonts` and inserting them in App.scss
+
+1. Simplified index.js (removed service worker)
+1. Deleted from src: index.css, logo.svg, serviceWorker.js, App.test.js
+1. Deleted from public: logo files, manifest.json, robots.txt
+1. Customized App.js and renamed to App.jsx

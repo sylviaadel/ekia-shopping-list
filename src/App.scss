@@ -12,6 +12,15 @@
   padding: 0;
   margin: 0;
 }
+h1{
+    color: #0058ab;
+    font-family: 'Lato-Bold';
+    margin: 20px 0!important;
+    font-size: 30px!important;
+}
+.bold{
+  font-family: 'Lato-Bold';
+}
 .App{
   font-family: 'Lato-Regular';
   min-height: calc(100vh);
@@ -34,8 +43,16 @@
   span{
       font-size: 18px;
   }
-  &:hover{
+  &:hover, &:focus{
       background-color: #01427e;
+  }
+  &:disabled{
+    background-color: #92b0cd;
+    cursor: default;
+    &:hover{
+      background-color: #92b0cd;
+      cursor: default;
+    }
   }
 }
 .secondaryBtn{
@@ -51,21 +68,15 @@
   cursor: pointer;
   line-height: 12px;
   transition: all .4s;
+  &:hover, &:focus{
+      background-color: #4a4c4e;
+  }
   span{
       font-size: 18px;
-  }
-  &:hover{
-      background-color: #4a4c4e;
   }
 }
 .form-control:focus{
     box-shadow: none!important;
-}
-h1{
-    color: #0058ab;
-    font-family: 'Lato-Bold';
-    margin: 20px 0!important;
-    font-size: 36px!important;
 }
 .form-check{
   display: flex!important;
@@ -87,6 +98,18 @@ h1{
     height: 30px;
   }
 }
-.bold{
+.btnlink{
+  background-color: transparent;
+  border: 0;
+  text-decoration: underline;
+  color: #0058ab;
   font-family: 'Lato-Bold';
+  &:disabled{
+    color: #9fa4a9;;
+  }
+}
+.form-check-label{
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

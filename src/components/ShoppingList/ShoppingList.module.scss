@@ -5,25 +5,4 @@
     padding-bottom: 20px;
     justify-content: center;
     min-height: calc(100vh - 65px);
-    p{
-        display: flex;
-        justify-content: space-between;
-        width: 200px;
-        margin: 20px 0 0;
-    }
-    .btnlink{
-        background-color: transparent;
-        border: 0;
-        text-decoration: underline;
-        color: #0058ab;
-        font-family: 'Lato-Bold';
-    }
-    .itemsForm {
-        width:500px;
-        margin-top: 20px;
-        ul{
-            list-style: none;
-            padding: 0;
-        }
-    }
 }

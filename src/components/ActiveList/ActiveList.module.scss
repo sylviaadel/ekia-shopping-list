@@ -1,0 +1,40 @@
+.ActiveList {
+    text-align: center;
+    p{
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        margin: 20px auto;
+    }
+    .itemsForm {
+        width:500px;
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+    }
+}
+.CompletedList {
+    text-align: center;
+    .itemsForm {
+        width:500px;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {    
+    .ActiveList {
+        p{
+            max-width: 200px;
+        }
+        .itemsForm {
+            width: 300px;
+            .form-check-label{
+                max-width:160px
+            }
+        }
+    }
+}
