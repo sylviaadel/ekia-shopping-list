@@ -89,10 +89,12 @@ I made the following enhancements:
 2. Added scss to project
 3. Changed App.css to be App.scss
 4. Added new favIcon(logo.png) to the path `/public/images`.
-5. Add images to the path `/src/images/images`
+5. Add needed images to the path `/src/images/images`
 6. Add needed fonts to `/src/fonts` and inserting them in App.scss
-
-1. Simplified index.js (removed service worker)
-1. Deleted from src: index.css, logo.svg, serviceWorker.js, App.test.js
-1. Deleted from public: logo files, manifest.json, robots.txt
-1. Customized App.js and renamed to App.jsx
+7. Add DOM elemnts to Welcome and styles
+8. Add AddIemModal component to the path `/src/components` and linking the button in Welcome Component with.
+9. Add ShoppingListWrapper Component to wrap the header and the list contents to the path `/src/components`
+10. Add routing to pages and redirect AddIemModal to ShoppingListWrapper
+12. Add PageNotFound container to the path `/src/components` and linking it to App.js to be redirected to if if the user opens a wrong link
+13. Adding ShoppingList component to the path `/src/components` and pass it to ShoppingListWrapper
+14. Adding styles to both components as scss files in the same loaction of components
