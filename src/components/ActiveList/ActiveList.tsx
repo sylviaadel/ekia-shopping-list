@@ -84,7 +84,7 @@ const ActiveList: FC<ActiveListProps> = (props) => {
               {itemList.map((item, index) => (
                 item.isCompleted ? <li className="form-check" key={index}>
                 <div>
-                  <input className="form-check-input" type="checkbox" checked={item.isCompleted} onChange={(e) => {isCompleted(index, e.target.checked)}}  />
+                  {/* <input className="form-check-input" type="checkbox" checked={item.isCompleted} onChange={(e) => {isCompleted(index, e.target.checked)}}  /> */}
                   <label className="form-check-label">{item.name}</label>
                   <label className='form-check-label bold mx-2'>{item.price} SEK</label>
                 </div>
