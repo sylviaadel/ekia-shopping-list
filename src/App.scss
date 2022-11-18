@@ -24,7 +24,6 @@ h1{
 .App{
   font-family: 'Lato-Regular';
   min-height: calc(100vh);
-  background-color: rgba(0, 88, 171, 0.05);
   padding-top: 65px;
 }
 .primaryBtn{
@@ -112,4 +111,9 @@ h1{
   max-width: 200px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.ReactModalPortal{
+  .ReactModal__Overlay {
+    z-index: 9;
+  }
 }
