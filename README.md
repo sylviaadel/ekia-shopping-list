@@ -1,6 +1,6 @@
-## React JS NovareWetube
+## React JS EKIAShoppingList
 
-An application used to manage and display Wetube videos, built with React, JavaScript and SASS.
+An application used to reate a todo list with all the furniture you want to buy, built with React, JavaScript and SASS.
 
 ## Project Screen Shot
 
