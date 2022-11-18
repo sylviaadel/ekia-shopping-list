@@ -1,4 +1,4 @@
-## React JS EKIAShoppingList
+## ReactJS EKIA Shopping List
 
 An application used to reate a todo list with all the furniture you want to buy, built with React, JavaScript and SASS.
 
