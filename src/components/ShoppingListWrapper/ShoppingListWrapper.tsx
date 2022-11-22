@@ -1,12 +1,11 @@
-import React, { FC } from 'react';
-import styles from './ShoppingListWrapper.module.scss';
+import React, { FC } from "react";
+import styles from "./ShoppingListWrapper.module.scss";
 // @ts-ignore
-import ShoppingList from '../ShoppingList/ShoppingList.tsx'
+import ShoppingList from "../ShoppingList/ShoppingList.tsx";
 
 interface ShoppingListWrapperProps {}
 
 const ShoppingListWrapper: FC<ShoppingListWrapperProps> = () => {
-  
   return (
     <>
       <div className={styles.ShoppingListWrapper}>
@@ -15,6 +14,6 @@ const ShoppingListWrapper: FC<ShoppingListWrapperProps> = () => {
       </div>
     </>
   );
-}
+};
 
 export default ShoppingListWrapper;
